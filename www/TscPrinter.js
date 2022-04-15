@@ -8,6 +8,10 @@ exports.connectPrinter = function (address, success, error) {
     exec(success, error, 'TscPrinter', 'connectPrinter', [address]);
 };
 
+exports.sendCommand = function (address, success, error) {
+    exec(success, error, 'TscPrinter', 'sendCommand', [address]);
+};
+
 exports.printBarCode = function (args, success, error) {
     exec(success, error, 'TscPrinter', 'printBarCode', args);
 };
